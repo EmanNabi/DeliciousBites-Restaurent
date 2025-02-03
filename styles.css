@@ -1,0 +1,296 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Section (restaurant name and navbar) */
+header {
+    background-color: rgb(62, 67, 72);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.3em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hover effect for Navbar Links */
+nav ul li a:hover {
+    color: #ff9f00;
+}
+
+/* Welcome Section */
+.hero {
+    background: url('banner.jpeg') no-repeat center center/cover; /* Replace with your image */
+    color: white;
+    padding: 100px 20px;
+    border-radius: 15px;
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Hover effect for Welcome Section */
+.hero:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+/* Menu Section */
+/* Menu Section */
+.menu {
+    background: url('menu.jpeg') no-repeat center center/cover;
+    margin: 0px 0px;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-item {
+    width: 80%;  /* Reduce the width of each item */
+    flex: 0 0 80%;  /* Adjusted to make each item smaller */
+    max-width: 300px; /* Set a max-width to control the size */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5em; /* Reduced the font size of the item title */
+    margin: 15px 0;
+}
+
+.menu-item p {
+    font-size: 1em; /* Reduced the font size of the description */
+}
+
+/* Slider Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 90%; /* Increased the width for smaller screens */
+        flex: 0 0 90%;
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+}
+
+/* Order Now Button Styling */
+.order-btn {
+    padding: 10px 20px;
+    background-color: #e88f00; /* Background color before hover */
+    color: white; /* Text color before hover */
+    border: 2px solid #e88f00; /* Border color before hover */
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Hover Effect for Order Now Button */
+.order-btn:hover {
+    background-color: white; /* Change background color to white on hover */
+    color: #e88f00; /* Change text color to previous border color */
+    border-color: #e88f00; /* Maintain the border color */
+}
+
+/* Numbers Section */
+.numbers {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.numbers h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.number-item {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for scale and color */
+}
+
+/* Hover effect for Number Items */
+.number-item:hover {
+    transform: scale(1.05); /* Scale up the div slightly on hover */
+    background-color: #ff9f00; /* Change the background color */
+}
+
+.number-item .count {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333; /* Dark color for the text */
+    transition: color 0.3s ease; /* Added transition for text color change */
+}
+
+/* Hover effect for count numbers */
+.number-item:hover .count {
+    color: white; /* Change count text color to white when hovered */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.info-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 1.2em;
+}
+
+.info-item a {
+    color: #ff9f00;
+    text-decoration: none;
+}
+
+/* Hover effect for Contact Address (ID) */
+#contact .info-item p:hover {
+    color: white; /* Change color to white on hover */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for Links in Contact (Instagram, Email, etc.) */
+#contact .info-item a:hover {
+    color: white; /* Change link color to white when hovered */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .number-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        width: 100%;
+    }
+}
