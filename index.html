@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>DELICIOUS BITES</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#menu">Order Now</a></li>
+                <li><a href="#contact">About Us</a></li>
+                <li><a href="#numbers">Statistics</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section with Background Image and Curved Corners -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Website!</h2>
+            <p>At Delicious Bites, we serve the finest dishes made with love and fresh ingredients. Join us for an unforgettable dining experience!</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2>OUR MENU</h2>
+    <div class="menu-slider">
+        <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="pizza.jpeg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious wood-fired pizzas with a variety of toppings.</p>
+            </div>
+            <div class="menu-item">
+                <img src="pasta.jpeg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Authentic Italian pasta dishes made fresh daily.</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpeg" alt="Burger">
+                <h3>Burgers</h3>
+                <p>Juicy burgers made with premium beef and fresh ingredients.</p>
+            </div>
+            <div class="menu-item">
+                <img src="sushi.jpeg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Fresh and delicious sushi rolls made with the finest ingredients.</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="salad.jpeg" alt="Salad">
+                <h3>Salad</h3>
+                <p>Fresh and healthy salads with a variety of toppings and dressings.</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="desert.jpeg" alt="Dessert">
+                <h3>Dessert</h3>
+                <p>Indulge in our sweet and decadent desserts, perfect for any occasion.</p>
+            </div>
+            
+            <!-- You can add more items here -->
+        </div>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="order-now">
+        <a href="#order" class="order-btn">Order Now</a>
+    </div>
+</section>
+
+
+    <!-- Numbers Section -->
+    <section id="numbers" class="numbers">
+        <h2>STATISTICS</h2>
+        <div class="number-item">
+            <span class="count" data-target="500">0</span>
+            <p>Happy Customers</p>
+        </div>
+        <div class="number-item">
+            <span class="count" data-target="100">0</span>
+            <p>Menu Items</p>
+        </div>
+        <div class="number-item">
+            <span class="count" data-target="10">0</span>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+
+    <!-- Contact Section with Divisions -->
+    <footer id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Contact Info</h3>
+                    <p>Email: <a href="mailto:info@deliciousbites.com">info@deliciousbites.com</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/deliciousbites" target="_blank">deliciousbites</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/company/deliciousbites" target="_blank">Delicious Bites</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Main Address</h3>
+                    <p>123 Main Street, Food City, FC 12345</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>About Us</h3>
+                    <p>Delicious Bites Restaurant offers a cozy and delightful experience. We are dedicated to providing delicious meals made from fresh ingredients. Join us to savor food made with love and passion.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
